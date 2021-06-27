@@ -10,7 +10,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  background: #e7e7ff;
+  background: white;
 }
 
 header img {
@@ -18,6 +18,10 @@ header img {
   background: white;
   border-radius: 5px;
   margin: 0 20px 0 40px;
+}
+
+header ul {
+    
 }
 
 article {
