@@ -1,37 +1,119 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700);
+/* use media queries on this one to make responsive design */
 
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
-  margin: 0;
-  padding: 0;
-  background: #02006e;
-	font-family: ubuntu;
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
 }
-
-header {
-  display: flex;
-  align-items: center;
-  background: white;
+p {font-size: 1.6em;}
+.margin {margin-bottom: 45px;}
+.bg-1 { 
+  background-color: #DFD3F7;
+  color: #2f2f2f;
 }
-
-header img {
-  width: 50px;
-  background: white;
-  border-radius: 5px;
-  margin: 0 20px 0 40px;
+.bg-1 img {
+  float: right;
+  margin-right: 10%;
+  margin-top: 4%;
+  transition: 0.5s;
 }
-
-header ul {
-    color: black;
-    
+.bg-1 img:hover {
+  width: 380px;
+  height: auto;
 }
-
-article {
-  background: white;
-  width: 90%;
-  margin: 20px auto;
-  padding: 10px;
+.bg-1 h3 {
+  letter-spacing: 3px;
+  margin: 10% 20%;
+  font-weight: bold;
+  font-size: 2.5em;
 }
-
-hr, article .date {
-  color: #a0a0a0;
+#subtext {
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-size: 0.7em;
+}
+.bg-2 { 
+  background-color: #fff;
+  color: #2f2f2f;
+  max-width: 85%;
+}
+.bg-2 h3 {
+  font-size: 2.3em;
+}
+.bg-4 { 
+  background-color: #2f2f2f;
+  color: #fff;
+}
+.container-fluid {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.navbar li {
+  font-size: 1.2em;
+}
+.navbar-nav li a:hover, .navbar-brand:hover {
+  color: #DFD3F7 !important;
+}
+.homeimg a img {
+  max-width: 80%;
+  transition: max-width 0.4s;
+}
+div a img:hover {
+  opacity: 0.7;
+  max-width: 85%;
+}
+span .ul {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+span .ul:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+span .ul:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.project1 img {
+  max-width: 80%;
+}
+.project1 p {
+  margin: 100px 10%;
+}
+footer a {
+  color: #DFD3F7;
+}
+footer a:hover {
+  color: rgb(255, 254, 187);
+}
+footer a:active {
+  color: rgb(255, 203, 187);
+}
+.project1 img, .project2 img, .project3 img {
+  max-width: 90%;
+  margin-bottom: 3%;
 }
